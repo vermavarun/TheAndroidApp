@@ -35,7 +35,7 @@ const CalculatorBasic = () => {
         <Text style={styles.buttonText}>Add</Text>
       </TouchableOpacity>
       <Text style={{ marginVertical: 10 }}>--- OR ---</Text>
-      <TouchableOpacity style={styles.button} onPress={() => setResult(0)}>
+      <TouchableOpacity style={styles.button} onPress={() => { setResult(0); setNum1(""); setNum2(""); }}>
         <Text style={styles.buttonText}>Reset</Text>
       </TouchableOpacity>
     </View>
