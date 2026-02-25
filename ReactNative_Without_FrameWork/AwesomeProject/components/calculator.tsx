@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: "#121212",
+    backgroundColor: "#b05a5a",
     justifyContent: "flex-end",
   },
   displayWrap: {

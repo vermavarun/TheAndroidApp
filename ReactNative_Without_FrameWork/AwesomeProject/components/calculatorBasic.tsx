@@ -14,6 +14,8 @@ const CalculatorBasic = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.text}> 🤓 Well yet another calculator 🤓 </Text>
+
       <TextInput
         style={styles.input}
         placeholder="Enter Number 1"
@@ -37,15 +39,22 @@ const CalculatorBasic = () => {
 };
 
 const styles = StyleSheet.create({
+  text: {
+    fontSize: 18,
+    marginBottom: 10,
+    color: "#333",
+    fontFamily: "Comic Sans MS",
+  },
   container: {
     flex: 1,
     padding: 20,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#dbea9d",
   },
   input: {
     width: "100%",
-    borderWidth: 1,
+    borderWidth: 3,
     borderColor: "#ccc",
     borderRadius: 8,
     paddingHorizontal: 12,
