@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, TextInput } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Alert } from "react-native";
 
 const CalculatorBasic = () => {
   const [num1, setNum1] = useState("");
@@ -32,7 +32,11 @@ const CalculatorBasic = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> 🤓 Well yet another calculator 🤓 </Text>
+
+      <TouchableOpacity  onPress={() => { Alert.alert("For Vinnu Ji Tinnu! 😎"); }}>
+        <Text style={styles.text}> 🤓 Well yet another calculator 🤓 </Text>
+      </TouchableOpacity>
+
 
       <TextInput
         style={styles.input}
@@ -48,7 +52,9 @@ const CalculatorBasic = () => {
         value={num2}
         onChangeText={setNum2}
       />
+
       <Text style={styles.result}>Result: {result}</Text>
+
     <View style={{ flexDirection: "row", alignItems: "center" }}>
 
       <TouchableOpacity style={styles.button} onPress={addNumbers}>
