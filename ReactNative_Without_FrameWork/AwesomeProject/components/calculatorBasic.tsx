@@ -34,6 +34,10 @@ const CalculatorBasic = () => {
       <TouchableOpacity style={styles.button} onPress={addNumbers}>
         <Text style={styles.buttonText}>Add</Text>
       </TouchableOpacity>
+      <Text style={{ marginVertical: 10 }}>--- OR ---</Text>
+      <TouchableOpacity style={styles.button} onPress={() => setResult(0)}>
+        <Text style={styles.buttonText}>Reset</Text>
+      </TouchableOpacity>
     </View>
   );
 };
