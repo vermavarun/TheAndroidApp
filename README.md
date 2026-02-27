@@ -1,3 +1,3 @@
 Android App
 
-[React Native using Expo](/ReactNative/README.md)
+[React Native using Expo](/ReactNative_EXPO/README.md)
