@@ -3,8 +3,19 @@ npx @react-native-community/cli@latest init P
 ```
 
 ```bash
+npm i
 npx react-native run-android
 npx react-native run-ios
+```
+## Build apk
+
+```bash
+cd android
+./gradlew clean
+./gradlew --refresh-dependencies
+./gradlew clean assembleRelease
+
+### apk generated at: app/build/outputs/apk/release/app-release.apk
 ```
 
 ## Build Android AAB
