@@ -16,6 +16,12 @@ cd android
 ./gradlew clean assembleRelease
 
 ### apk generated at: app/build/outputs/apk/release/app-release.apk
+
+# for apk in debug
+./gradlew clean assembleDebug
+
+### apk generated at: app/build/outputs/apk/debug/app-debug.apk
+
 ```
 
 ## Build Android AAB
